@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Картины известных художников - Таблица</title>
+</head>
+<body>
+    <div align="left">
+        <p>
+            <a href="index.html">Самые известные картины</a><br>
+            <b>Список самых известных картин</b>
+        </p>
+    </div>
+    <hr>
+    <details open>
+        <summary><b>График</b></summary>
+        <form action="#" method="get">
+            <p><b>Значение по оси OX</b></p>
+            <p>
+                <input type="radio" name="ox" value="style" checked> Стиль<br>
+                <input type="radio" name="ox" value="country"> Страна<br>
+                <input type="radio" name="ox" value="year"> Год<br>
+                <input type="radio" name="ox" value="paint"> Вид краски
+            </p>
+            <p><b>Значение по оси OY</b></p>
+            <p>
+                <input type="checkbox" name="oy" value="max_year"> Максимальный год<br>
+                <input type="checkbox" name="oy" value="min_year"> Минимальный год<br>
+                <input type="checkbox" name="oy" value="count"> Количество картин
+            </p>
+            <p><input type="submit" value="Построить"></p>
+        </form>
+        <p>Здесь будет график</p>
+    </details>
+    <details open>
+        <summary><b>Фильтр</b></summary>
+        <form action="#" method="get">
+            <p>Название: <input type="text" name="name_filter" size="30"></p>
+            <p>Художник: <input type="text" name="artist_filter" size="30"></p>
+            <p>Страна: <input type="text" name="country_filter" size="30"></p>
+            <p>Стиль: <input type="text" name="style_filter" size="30"></p>
+            <p>Краски: <input type="text" name="paint_filter" size="30"></p>
+            <p>Год: от <input type="number" name="year_from"> до <input type="number" name="year_to"></p>
+            <p><input type="submit" value="Найти"></p>
+        </form>
+    </details>
+    <details open>
+        <summary><b>Сортировка</b></summary>
+        <form action="#" method="get">
+            <p>
+                Первый уровень:
+                <select name="sort1">
+                    <option value="none">Нет</option>
+                    <option value="name">Название</option>
+                    <option value="artist">Художник</option>
+                    <option value="country">Страна</option>
+                    <option value="style">Стиль</option>
+                    <option value="paint">Краски</option>
+                    <option value="year">Год</option>
+                </select>
+                по <input type="radio" name="order1" value="asc" checked> возрастанию
+                <input type="radio" name="order1" value="desc"> убыванию
+            </p>
+            <p>
+                Второй уровень:
+                <select name="sort2">
+                    <option value="none">Нет</option>
+                    <option value="name">Название</option>
+                    <option value="artist">Художник</option>
+                    <option value="country">Страна</option>
+                    <option value="style">Стиль</option>
+                    <option value="paint">Краски</option>
+                    <option value="year">Год</option>
+                </select>
+                по <input type="radio" name="order2" value="asc" checked> возрастанию
+                <input type="radio" name="order2" value="desc"> убыванию
+            </p>
+            <p>
+                Третий уровень:
+                <select name="sort3">
+                    <option value="none">Нет</option>
+                    <option value="name">Название</option>
+                    <option value="artist">Художник</option>
+                    <option value="country">Страна</option>
+                    <option value="style">Стиль</option>
+                    <option value="paint">Краски</option>
+                    <option value="year">Год</option>
+                </select>
+                по <input type="radio" name="order3" value="asc" checked> возрастанию
+                <input type="radio" name="order3" value="desc"> убыванию
+            </p>
+            <p><input type="submit" value="Сортировать"></p>
+        </form>
+    </details>
+    <hr>
+    <div align="center">
+        <table border="1" cellpadding="5" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Художник</th>
+                    <th>Страна</th>
+                    <th>Стиль</th>
+                    <th>Краски</th>
+                    <th>Год</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Мона Лиза</td>
+                    <td>Леонардо да Винчи</td>
+                    <td>Италия</td>
+                    <td>Ренессанс</td>
+                    <td>Масло</td>
+                    <td>1503</td>
+                </tr>
+                <tr>
+                    <td>Звездная ночь</td>
+                    <td>Винсент Ван Гог</td>
+                    <td>Нидерланды</td>
+                    <td>Постимпрессионизм</td>
+                    <td>Масло</td>
+                    <td>1889</td>
+                </tr>
+                <tr>
+                    <td>Крик</td>
+                    <td>Эдвард Мунк</td>
+                    <td>Норвегия</td>
+                    <td>Экспрессионизм</td>
+                    <td>Темпера</td>
+                    <td>1893</td>
+                </tr>
+                <tr>
+                    <td>Девушка с жемчужной сережкой</td>
+                    <td>Ян Вермеер</td>
+                    <td>Нидерланды</td>
+                    <td>Барокко</td>
+                    <td>Масло</td>
+                    <td>1665</td>
+                </tr>
+                <tr>
+                    <td>Герника</td>
+                    <td>Пабло Пикассо</td>
+                    <td>Испания</td>
+                    <td>Кубизм</td>
+                    <td>Масло</td>
+                    <td>1937</td>
+                </tr>
+                <tr>
+                    <td>Постоянство памяти</td>
+                    <td>Сальвадор Дали</td>
+                    <td>Испания</td>
+                    <td>Сюрреализм</td>
+                    <td>Масло</td>
+                    <td>1931</td>
+                </tr>
+                <tr>
+                    <td>Рождение Венеры</td>
+                    <td>Сандро Боттичелли</td>
+                    <td>Италия</td>
+                    <td>Ренессанс</td>
+                    <td>Темпера</td>
+                    <td>1486</td>
+                </tr>
+                <tr>
+                    <td>Тайная вечеря</td>
+                    <td>Леонардо да Винчи</td>
+                    <td>Италия</td>
+                    <td>Ренессанс</td>
+                    <td>Темпера</td>
+                    <td>1498</td>
+                </tr>
+                <tr>
+                    <td>Сикстинская Мадонна</td>
+                    <td>Рафаэль Санти</td>
+                    <td>Италия</td>
+                    <td>Ренессанс</td>
+                    <td>Масло</td>
+                    <td>1514</td>
+                </tr>
+                <tr>
+                    <td>Ночной дозор</td>
+                    <td>Рембрандт</td>
+                    <td>Нидерланды</td>
+                    <td>Барокко</td>
+                    <td>Масло</td>
+                    <td>1642</td>
+                </tr>
+                <tr>
+                    <td>Империя света</td>
+                    <td>Рене Магритт</td>
+                    <td>Бельгия</td>
+                    <td>Сюрреализм</td>
+                    <td>Масло</td>
+                    <td>1954</td>
+                </tr>
+                <tr>
+                    <td>Американская готика</td>
+                    <td>Грант Вуд</td>
+                    <td>США</td>
+                    <td>Регионализм</td>
+                    <td>Масло</td>
+                    <td>1930</td>
+                </tr>
+                <tr>
+                    <td>Подсолнухи</td>
+                    <td>Винсент Ван Гог</td>
+                    <td>Нидерланды</td>
+                    <td>Постимпрессионизм</td>
+                    <td>Масло</td>
+                    <td>1888</td>
+                </tr>
+                <tr>
+                    <td>Кувшинки</td>
+                    <td>Клод Моне</td>
+                    <td>Франция</td>
+                    <td>Импрессионизм</td>
+                    <td>Масло</td>
+                    <td>1919</td>
+                </tr>
+                <tr>
+                    <td>Завтрак на траве</td>
+                    <td>Эдуард Мане</td>
+                    <td>Франция</td>
+                    <td>Импрессионизм</td>
+                    <td>Масло</td>
+                    <td>1863</td>
+                </tr>
+                <tr>
+                    <td>Бал в Мулен де ла Галетт</td>
+                    <td>Пьер Огюст Ренуар</td>
+                    <td>Франция</td>
+                    <td>Импрессионизм</td>
+                    <td>Масло</td>
+                    <td>1876</td>
+                </tr>
+                <tr>
+                    <td>Танцующий класс</td>
+                    <td>Эдгар Дега</td>
+                    <td>Франция</td>
+                    <td>Импрессионизм</td>
+                    <td>Пастель</td>
+                    <td>1874</td>
+                </tr>
+                <tr>
+                    <td>Большая волна в Канагаве</td>
+                    <td>Кацусика Хокусай</td>
+                    <td>Япония</td>
+                    <td>Укиё-э</td>
+                    <td>Тушь</td>
+                    <td>1831</td>
+                </tr>
+                <tr>
+                    <td>Девятый вал</td>
+                    <td>Иван Айвазовский</td>
+                    <td>Россия</td>
+                    <td>Романтизм</td>
+                    <td>Масло</td>
+                    <td>1850</td>
+                </tr>
+                <tr>
+                    <td>Утро в сосновом лесу</td>
+                    <td>Иван Шишкин</td>
+                    <td>Россия</td>
+                    <td>Реализм</td>
+                    <td>Масло</td>
+                    <td>1889</td>
+                </tr>
+                <tr>
+                    <td>Богатыри</td>
+                    <td>Виктор Васнецов</td>
+                    <td>Россия</td>
+                    <td>Васнецовский стиль</td>
+                    <td>Масло</td>
+                    <td>1898</td>
+                </tr>
+                <tr>
+                    <td>Черный квадрат</td>
+                    <td>Казимир Малевич</td>
+                    <td>Россия</td>
+                    <td>Супрематизм</td>
+                    <td>Масло</td>
+                    <td>1915</td>
+                </tr>
+                <tr>
+                    <td>Красный конь</td>
+                    <td>Кузьма Петров-Водкин</td>
+                    <td>Россия</td>
+                    <td>Символизм</td>
+                    <td>Масло</td>
+                    <td>1912</td>
+                </tr>
+                <tr>
+                    <td>Незнакомка</td>
+                    <td>Иван Крамской</td>
+                    <td>Россия</td>
+                    <td>Реализм</td>
+                    <td>Масло</td>
+                    <td>1883</td>
+                </tr>
+                <tr>
+                    <td>Троица</td>
+                    <td>Андрей Рублев</td>
+                    <td>Россия</td>
+                    <td>Иконопись</td>
+                    <td>Темпера</td>
+                    <td>1425</td>
+                </tr>
+                <tr>
+                    <td>Синий всадник</td>
+                    <td>Василий Кандинский</td>
+                    <td>Россия</td>
+                    <td>Экспрессионизм</td>
+                    <td>Акварель</td>
+                    <td>1903</td>
+                </tr>
+                <tr>
+                    <td>Автопортрет</td>
+                    <td>Альбрехт Дюрер</td>
+                    <td>Германия</td>
+                    <td>Ренессанс</td>
+                    <td>Масло</td>
+                    <td>1500</td>
+                </tr>
+                <tr>
+                    <td>Сад земных наслаждений</td>
+                    <td>Иероним Босх</td>
+                    <td>Нидерланды</td>
+                    <td>Северное Возрождение</td>
+                    <td>Масло</td>
+                    <td>1510</td>
+                </tr>
+                <tr>
+                    <td>Вавилонская башня</td>
+                    <td>Питер Брейгель</td>
+                    <td>Нидерланды</td>
+                    <td>Северное Возрождение</td>
+                    <td>Масло</td>
+                    <td>1563</td>
+                </tr>
+                <tr>
+                    <td>Юдифь, обезглавливающая Олоферна</td>
+                    <td>Артемизия Джентилески</td>
+                    <td>Италия</td>
+                    <td>Барокко</td>
+                    <td>Масло</td>
+                    <td>1620</td>
+                </tr>
+                <tr>
+                    <td>Девушка с веером</td>
+                    <td>Пабло Пикассо</td>
+                    <td>Испания</td>
+                    <td>Розовый период</td>
+                    <td>Масло</td>
+                    <td>1905</td>
+                </tr>
+                <tr>
+                    <td>Авиньонские девицы</td>
+                    <td>Пабло Пикассо</td>
+                    <td>Испания</td>
+                    <td>Кубизм</td>
+                    <td>Масло</td>
+                    <td>1907</td>
+                </tr>
+                <tr>
+                    <td>Танец</td>
+                    <td>Анри Матисс</td>
+                    <td>Франция</td>
+                    <td>Фовизм</td>
+                    <td>Масло</td>
+                    <td>1910</td>
+                </tr>
+                <tr>
+                    <td>Поцелуй</td>
+                    <td>Густав Климт</td>
+                    <td>Австрия</td>
+                    <td>Модерн</td>
+                    <td>Масло</td>
+                    <td>1908</td>
+                </tr>
+                <tr>
+                    <td>Портрет Адели Блох-Бауэр</td>
+                    <td>Густав Климт</td>
+                    <td>Австрия</td>
+                    <td>Модерн</td>
+                    <td>Масло</td>
+                    <td>1907</td>
+                </tr>
+                <tr>
+                    <td>Композиция VIII</td>
+                    <td>Василий Кандинский</td>
+                    <td>Россия</td>
+                    <td>Абстракционизм</td>
+                    <td>Масло</td>
+                    <td>1923</td>
+                </tr>
+                <tr>
+                    <td>Красный, синий, желтый</td>
+                    <td>Пит Мондриан</td>
+                    <td>Нидерланды</td>
+                    <td>Неопластицизм</td>
+                    <td>Масло</td>
+                    <td>1930</td>
+                </tr>
+                <tr>
+                    <td>Преданность</td>
+                    <td>Рене Магритт</td>
+                    <td>Бельгия</td>
+                    <td>Сюрреализм</td>
+                    <td>Масло</td>
+                    <td>1966</td>
+                </tr>
+                <tr>
+                    <td>Сын человеческий</td>
+                    <td>Рене Магритт</td>
+                    <td>Бельгия</td>
+                    <td>Сюрреализм</td>
+                    <td>Масло</td>
+                    <td>1964</td>
+                </tr>
+                <tr>
+                    <td>Голубая обнаженная</td>
+                    <td>Анри Матисс</td>
+                    <td>Франция</td>
+                    <td>Аппликация</td>
+                    <td>Гуашь</td>
+                    <td>1952</td>
+                </tr>
+                <tr>
+                    <td>Две Фриды</td>
+                    <td>Фрида Кало</td>
+                    <td>Мексика</td>
+                    <td>Сюрреализм</td>
+                    <td>Масло</td>
+                    <td>1939</td>
+                </tr>
+                <tr>
+                    <td>Автопортрет с терновым ожерельем</td>
+                    <td>Фрида Кало</td>
+                    <td>Мексика</td>
+                    <td>Сюрреализм</td>
+                    <td>Масло</td>
+                    <td>1940</td>
+                </tr>
+                <tr>
+                    <td>Номер 5</td>
+                    <td>Джексон Поллок</td>
+                    <td>США</td>
+                    <td>Абстрактный экспрессионизм</td>
+                    <td>Акрил</td>
+                    <td>1948</td>
+                </tr>
+                <tr>
+                    <td>Банки с супом Кэмпбелл</td>
+                    <td>Энди Уорхол</td>
+                    <td>США</td>
+                    <td>Поп-арт</td>
+                    <td>Акрил</td>
+                    <td>1962</td>
+                </tr>
+                <tr>
+                    <td>Диптих Мэрилин</td>
+                    <td>Энди Уорхол</td>
+                    <td>США</td>
+                    <td>Поп-арт</td>
+                    <td>Акрил</td>
+                    <td>1962</td>
+                </tr>
+                <tr>
+                    <td>Молочница</td>
+                    <td>Ян Вермеер</td>
+                    <td>Нидерланды</td>
+                    <td>Барокко</td>
+                    <td>Масло</td>
+                    <td>1658</td>
+                </tr>
+                <tr>
+                    <td>Урок анатомии доктора Тульпа</td>
+                    <td>Рембрандт</td>
+                    <td>Нидерланды</td>
+                    <td>Барокко</td>
+                    <td>Масло</td>
+                    <td>1632</td>
+                </tr>
+                <tr>
+                    <td>Возвращение блудного сына</td>
+                    <td>Рембрандт</td>
+                    <td>Нидерланды</td>
+                    <td>Барокко</td>
+                    <td>Масло</td>
+                    <td>1669</td>
+                </tr>
+                <tr>
+                    <td>Мадонна с младенцем</td>
+                    <td>Леонардо да Винчи</td>
+                    <td>Италия</td>
+                    <td>Ренессанс</td>
+                    <td>Масло</td>
+                    <td>1490</td>
+                </tr>
+                <tr>
+                    <td>Венера Урбинская</td>
+                    <td>Тициан</td>
+                    <td>Италия</td>
+                    <td>Ренессанс</td>
+                    <td>Масло</td>
+                    <td>1538</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <hr>
+    <div align="center">
+        <footer>
+            <p><b>Группа: Б9124-09.03.04(5)</b></p>
+            <p><b>Разработчик: Ложкина А.А.</b></p>
+        </footer>
+    </div>
+</body>
+</html>
